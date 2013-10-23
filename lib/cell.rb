@@ -29,4 +29,12 @@ class Cell
     # get a new value if there's only one possible candidate
   end
 
+  def row_calculator index_number, number_of_elements_in_row
+      row = index_number / number_of_elements_in_row
+  end
+
+  def column_calculator index_number, number_of_elements_in_row
+      column = index_number % number_of_elements_in_row
+  end
+
 end

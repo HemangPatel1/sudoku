@@ -23,7 +23,15 @@ describe Cell do
 		expect(cell.get_starting_position_from(grid)).to eq 0
 	end
 
-	
+	it 'should return row number' do 
+		expect(cell.row_calculator(10, 9)).to eq 1
+	end
+
+	it 'should return column number' do
+		expect(cell.column_calculator(10, 9)).to eq 1
+	end
+
+
 
 	
 end
