@@ -15,6 +15,10 @@ class Cell
 	@value.nil?
   end
 
+  def get_starting_position_from grid
+    grid.first_cell_checker
+  end
+
   def candidates
     
   end
