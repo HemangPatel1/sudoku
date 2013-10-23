@@ -31,6 +31,10 @@ describe Cell do
 		expect(cell.column_calculator(10, 9)).to eq 1
 	end
 
+	it 'should return quadrant' do
+		expect(cell.quadrant_calculator(2, 2)).to eq 1
+	end
+
 
 
 	

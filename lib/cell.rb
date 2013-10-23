@@ -37,4 +37,10 @@ class Cell
       column = index_number % number_of_elements_in_row
   end
 
+  def quadrant_calculator row_calculator, column_calculator
+    return 1 if (0..2).include?(row_calculator) && (0..2).include?(column_calculator)
+  end
+
+  
+
 end
