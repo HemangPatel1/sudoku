@@ -32,8 +32,10 @@ describe Cell do
 	end
 
 	it 'should return quadrant' do
-		expect(cell.quadrant_calculator(4, 1)).to eq 4
+		expect(cell.quadrant_calculator(4, 1)).to eq 3
 	end
+
+
 
 
 

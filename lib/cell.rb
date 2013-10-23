@@ -38,15 +38,7 @@ class Cell
   end
 
   def quadrant_calculator row_calculator, column_calculator
-    return 1 if (0..2).include?(row_calculator) && (0..2).include?(column_calculator)
-    return 2 if (0..2).include?(row_calculator) && (3..5).include?(column_calculator)
-    return 3 if (0..2).include?(row_calculator) && (6..8).include?(column_calculator)
-    return 4 if (3..5).include?(row_calculator) && (0..2).include?(column_calculator)
-    return 5 if (3..5).include?(row_calculator) && (3..5).include?(column_calculator)
-    return 6 if (3..5).include?(row_calculator) && (6..8).include?(column_calculator)
-    return 7 if (6..8).include?(row_calculator) && (0..2).include?(column_calculator)
-    return 8 if (6..8).include?(row_calculator) && (3..5).include?(column_calculator)
-    return 9 if (6..8).include?(row_calculator) && (6..8).include?(column_calculator)    
+      (((row_calculator/3)*3) + (column_calculator/3))
   end
 
 
