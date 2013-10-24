@@ -31,10 +31,5 @@ describe Cell do
 	it 'returns row neighbours' do
 		expect(cell.row_neighbours(0, 0)).to eq [1, 5, 0, 0, 3, 0, 0, 2]
 	end
-
-
-
-
-
 	
 end
