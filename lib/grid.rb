@@ -1,10 +1,20 @@
 class Grid
 
-	def initialize 
-		@cells = '015003002000100906270068430490002017501040380003905000900081040860070025037204600'
+	attr_reader :cells
+
+	def initialize puzzle
+		@puzzle = puzzle
+		assign_values_to puzzle
 	end
 
-	attr_reader :cells
+	def assign_values_to puzzle
+		@cells = []
+		i = 0
+		for i in 0..80 
+			@cells <<  Cell.new(value = puzzle[i].to_i, position = i+1)
+		end
+		@cells
+	end
 
 	def cell_counter
 		cells_array = @cells.split(//).map(&:to_i)
@@ -30,17 +40,13 @@ class Grid
 	end
 
 
-	def inspect
+	# def inspect
 
+	# end
+
+	def puzzle_array puzzle
+		puzzle
 	end
 
 end
-
-  #   outstanding_before, looping = SIZE, false
-		# while !solved? && !looping
-		# 	try_to_solve # ask each cell to solve itself
-		# 	outstanding = @cells.count {|c| c.solved? }
-		# 	looping = outstanding_before == outstanding       
-		# 	outstanding_before = outstanding     
-		# end 
 
