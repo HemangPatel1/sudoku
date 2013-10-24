@@ -16,6 +16,7 @@ class Grid
 		@cells
 	end
 
+=begin
 	def cell_counter
 		cells_array = @cells.split(//).map(&:to_i)
 		cells_array.count
@@ -30,7 +31,7 @@ class Grid
 		cells_array = @cells.split(//).map(&:to_i)
 		cells_array.fetch(1)
 	end
-
+=end
 	def solve
     
 	end
@@ -39,13 +40,12 @@ class Grid
 
 	end
 
-
 	# def inspect
 
 	# end
 
-	def puzzle_array puzzle
-		puzzle
+	def puzzle_array
+		@puzzle
 	end
 
 end

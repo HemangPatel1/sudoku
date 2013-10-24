@@ -53,12 +53,12 @@ describe Cell do
 		expect(cell.quadrant).to eq 1
 	end
 
-	# it 'returns row neighbours' do
-	# 	expect(cell.row_neighbours(0)).to eq [1, 5, 3, 2]
-	# end
+	it 'returns row neighbours' do
+	 	expect(cell.row_neighbours).to eq [1, 5, 3, 2]
+	end
 
-	#  it 'returns column neighbours' do
-	# 	expect(cell.column_neighbours(0)).to eq [2, 4, 5, 9, 8]
-	#  end
+	it 'returns column neighbours' do
+	 	expect(cell.column_neighbours).to eq [3, 8, 2, 5, 1, 4]
+	end
 	
 end
