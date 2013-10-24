@@ -29,6 +29,14 @@ class Cell
     # get a new value if there's only one possible candidate
   end
 
+
+	# row and colum to row_location and column_location respectively
+	# that way, can define a method for what the row_neighbours are based on the row
+	# its located on. ie if row 4, need a method to actually show what else is in that 
+	# row! ie divide the array/string into rows which i guess we've already done, but
+	# then the method needs to say what else is on that line?
+	
+	
   def row_calculator index_number, number_of_elements_in_row
       row = index_number / number_of_elements_in_row
   end
@@ -41,6 +49,9 @@ class Cell
       (((row_calculator/3)*3) + (column_calculator/3))
   end
 
+  def row_neighbours row_calculator
+			
+  end
 
 
 end

@@ -35,6 +35,10 @@ describe Cell do
 		expect(cell.quadrant_calculator(4, 1)).to eq 3
 	end
 
+	it 'should return the elements in its row' do
+		expect(cell.row_neighbours(0)).to eq [0, 1, 5, 0, 0, 3, 0, 0, 2]
+	end
+
 
 
 
